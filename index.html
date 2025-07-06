@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasseem Metry's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/191964db11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images\W.png" alt="logo" class="logo", width="120" height="120">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Ml/AI Engineer
+                </p>
+                <h1>
+                    Hi, I'm <span>Wasseem</span><br>Metry from Egypt
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images\link.jpg" alt="Wasseem Metry image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">
+                    About Me
+                </h1>
+                <p>
+                    Hi! I'm Wasseem Emad, a passionate Machine Learning Engineer 
+                    with hands-on experience building real-world AI systems, 
+                    LLM powered applications, and full-stack ML tools. 
+                    I specialize in Python, TensorFlow, and deploying ML models 
+                    into intuitive web apps using FastAPI and Streamlit.
+                </p>
+                <div class="tab-titles">
+                    <p class='tab-links active-link' onclick="opentab('skills')">
+                        Skills
+                    </p>
+                    <p class='tab-links' onclick="opentab('experience')">
+                        Experience
+                    </p>
+                    <p class='tab-links' onclick="opentab('education')">
+                        Education
+                    </p>
+
+                </div>
+                <div class="tab-contents active-tab" id='skills'>
+                    <ul>
+                        <li>
+                            <span>
+                                Programming Languages 
+                            </span> <br> 
+                             Python, SQL, MATLAB, MangoDB, C/C++.
+                        </li>
+                        <li>
+                            <span>
+                                ML Frameworks 
+                            </span> <br> 
+                            TensorFlow, PyTorch, scikit-learn. 
+                        </li>
+                        <li>
+                            <span>
+                                Tools 
+                            </span> <br> 
+                            FastAPI, Streamlit, LangChain, Git, Mlflow, ZenML, LangGraph, crewAi.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id='experience'>
+                    <ul>
+                        <li>
+                            <span>
+                               Feb 2025 - current
+                            </span> <br> 
+                            ML/AI Freelancer Engineer
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id='education'>
+                    <ul>
+                        <li>
+                            <span>
+                                2020 - 2024
+                            </span> <br> 
+                            DUAL DEGREE UEL B.SC. ENGINEERING HONS. University of East London 
+                        </li>
+                        <li>
+                            <span>
+                                2019 - 2024
+                            </span> <br> 
+                            Bachelor of Science MECHATRONICS ENGINEERING AIN SHAMS UNIVERSITY
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">
+                    My Services
+            </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>
+                        🧠 Custom AI & Machine Learning Solutions
+                    </h2>
+                    <p>
+                        I design and develop end-to-end machine learning pipelines that transform raw data into actionable insights. Whether you're predicting stock prices, identifying customer churn, or building deep learning models for computer vision or sequence analysis, I deliver models that are both accurate and efficient.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>
+                        🗣️ LLM & NLP-Powered Applications 
+                    </h2>
+                    <p>
+                        Leverage the power of LLMs & NLP to build intelligent language interfaces. <br> create advanced NLP applications powered by large language models (LLMs) such as GPT-4. From building job-matching systems to real-time video summarizers and chatbots, I develop tools that understand, process, and respond to natural language queries with human-like fluency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                    My Projects
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <h2>
+                        Resume to Job Matching System
+                    </h2>
+                    <p>
+                        This system matches a candidate’s resume with live job listings by extracting skills, classifying them, scoring match quality using a language model, and sending notifications for high matches.
+                        <br> This project has two versions one where I use autonomous agents to automate the process of matching resumes with jobs and another where I use a more traditional approach.
+                    </p>
+                    <a href="https://github.com/WasseemEmad/resume_scoring_app.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="work">
+                    <h2>
+                        🧠 3D Printing Market Lead Analyzer
+                    </h2>
+                    <p>
+                        This AI tool scrapes and analyzes 3D printing articles to identify companies likely to benefit from automation software (like Trinckle 3D). Using GPT-4, it summarizes content, extracts companies, and scores them based on innovation trends such as customization and parametric design.
+                    </p>
+                    <a href="https://github.com/WasseemEmad/summarization_app.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="work">
+                    <h2>
+                        📈 Amazon Stock Price Prediction & Q&A
+                    </h2>
+                    <p>
+                        This full-stack application forecasts Amazon stock prices using a trained LSTM model and allows users to interact with predictions using natural language. Users can upload CSV/NPY data, visualize trends, and ask questions powered by a LangChain agent with GPT-3.5.
+                    </p>
+                    <a href="https://github.com/WasseemEmad/Amazon-Stock-Prediction-and-Natural-Language-Q-A-App.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="work">
+                    <h2>
+                        📹 YouTube Video Summarizer & Q&A Assistant
+                    </h2>
+                    <p>
+                        This tool summarizes YouTube videos and answers questions about their content using the video transcript. It combines FastAPI, LangChain agents, and the Hugging Face Mistral-7B model to create a lightweight, LLM-powered video assistant.
+                    </p>
+                    <a href="https://github.com/WasseemEmad/YouTube-Video-AI-Assistant-.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="work">
+                    <h2>
+                        💬 Customer Churn Prediction Chatbot
+                    </h2>
+                    <p>
+                        I developed a predictive system that identifies customers likely to churn, then uses an LLM chatbot to discuss the reasons and potential retention strategies. Built for telecom companies, the chatbot merges classical machine learning with LLM-based dialogue.
+                    </p>
+                    <a href="https://github.com/WasseemEmad/Customer-Churn-Prediction-System.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="work">
+                    <h2>
+                        🖼️ Image Captioning with Deep Learning
+                    </h2>
+                    <p>
+                        I built an end-to-end image captioning system that can describe the content of images using deep learning. The model extracts visual features using a pre-trained CNN (Xception) and generates captions with an LSTM decoder trained on the Flickr8k dataset. The final output mimics how humans describe scenes, making it useful for accessibility tools and media tagging.
+                    </p>
+                    <a href="https://github.com/WasseemEmad/Captioning_model.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+                <div class="work">
+                    <h2>
+                        🎬 Movie Recommendation System
+                    </h2>
+                    <p>
+                        This system recommends movies to users based on their viewing history and preferences using collaborative filtering and KNN. It features a user-friendly interface built with Streamlit and integrates TMDb and OMDb APIs to display movie posters and metadata. The system is optimized with a sparse matrix representation for fast retrieval.
+                    </p>
+                    <a href="https://github.com/WasseemEmad/Movie_recommindor.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">
+                        Contact Me
+                    </h1>
+                    <p>
+                        <i class="fa-solid fa-paper-plane"></i> wasseemmetry21@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> +1205017777
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/wasseemmetry/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/WasseemEmad"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images\Wasseem_Emad_cv.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxdhx36Ud3t2oVrbdV_uktozDdlPtVOM02l9T0Nm-yth34cDi7BNgnH3x5H_gdE0rzK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!";
+                setTimeout(function() {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
